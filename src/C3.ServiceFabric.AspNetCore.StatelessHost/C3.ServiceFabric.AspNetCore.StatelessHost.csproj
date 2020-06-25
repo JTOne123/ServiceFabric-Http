@@ -5,7 +5,15 @@
     <Platforms>AnyCPU;x64</Platforms>
     <PackageTags>ServiceFabric;ReliableServices;Hosting;AspNetCore</PackageTags>
     <Description>A hosting library for stateless ASP.NET Core-based Service Fabric services.</Description>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.1.0" />
