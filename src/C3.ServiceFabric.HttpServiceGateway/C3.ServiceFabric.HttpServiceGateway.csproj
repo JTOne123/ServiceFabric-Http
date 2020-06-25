@@ -5,7 +5,15 @@
     <Platforms>AnyCPU;x64</Platforms>
     <Description>A HTTP-based gateway for Service Fabric, implemented as an ASP.NET Core middleware.</Description>
     <PackageTags>ServiceFabric;ReliableServices;HttpClient;Retry;AspNetCore;gateway</PackageTags>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <ProjectReference Include="..\C3.ServiceFabric.HttpCommunication\C3.ServiceFabric.HttpCommunication.csproj" />
